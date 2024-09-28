@@ -31,8 +31,13 @@ public class UI {
         } while (ch !=0);
     }
     public void UserInput(){
-        System.out.print("\nEnter your choice: ");
-        ch = sc.nextInt();
+        try {
+            System.out.print("\nEnter your choice: ");
+            ch = sc.nextInt();
+        } catch (Exception e){
+            System.out.println(e+ "!!!!!!!!Please enter relevant Number!!!!!!!!!");
+        }
+
     }
 
     public void choice(){
